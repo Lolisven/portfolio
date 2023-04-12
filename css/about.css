@@ -1,0 +1,48 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.right-section {
+  display: flex;
+}
+.right-section .button-header {
+  margin: 5px;
+}
+.right-section .button-header a {
+  text-decoration: none;
+}
+
+/* Main */
+#main-content {
+  padding-left: 50px;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.right-section {
+}
+
+/* General */
+body {
+  background-color: #fafafa;
+  font-family: Montserrat;
+  padding-top: 30px;
+  height: 3000px;
+}
+button {
+  font-family: Montserrat;
+}
