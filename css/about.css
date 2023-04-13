@@ -49,17 +49,35 @@
   line-height: 25.6px;
 }
 .img-character {
-  width: 325px;
-  height: 325px;
+  height: auto;
 }
 .about-me {
   margin-bottom: 0;
   color: #f4cf39;
 }
+/* Get In Touch */
+.getInTouch {
+  display: flex;
+  column-gap: 7px;
+  margin-bottom: 5px;
+  margin-left: -10px;
+}
+.touch-icon {
+  width: 36px;
+  margin: 10px;
+  transition: width, height 0.15s;
+}
+.touch-icon:hover {
+  width: 38px;
+  margin-right: 8px;
+}
 
 /* Footer */
 .footer {
   display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
   justify-content: space-between;
 }
 .right-section {
@@ -70,6 +88,7 @@ body {
   background-color: #fafafa;
   font-family: Montserrat;
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 button {
   font-family: Montserrat;
