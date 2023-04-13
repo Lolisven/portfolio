@@ -33,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 }
 @media (max-width: 700px) {
   .about-info {
@@ -43,8 +44,9 @@
 .about-info {
   display: grid;
   margin-top: 0;
-  margin-right: 80px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 0.5fr;
+  font-size: 16px;
+  line-height: 25.6px;
 }
 .img-character {
   width: 325px;
