@@ -15,7 +15,7 @@
 }
 .right-section .button-header {
   margin: 5px;
-  transition: 1s;
+  transition: text-decoration 0.15s;
 }
 .right-section .button-header a {
   text-decoration: none;
