@@ -2,28 +2,41 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #fafafa;
-  height: 3.125rem; /* 50px / 16px = 3.125rem */
   position: sticky;
   left: 0;
   right: 0;
   top: 0;
 }
+/* Header Left Secction */
+.left-section {
+  display: flex;
+  margin-top: 2em;
+  margin-left: 3.75em;
+}
+.gg-link {
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  color: black;
+}
+
+/* Header Right Seaction  */
 .header .right-section {
   display: flex;
-  margin-top: 0.625rem; /* 10px / 16px = 0.625rem */
-  margin-right: 0.9375rem; /* 15px / 16px = 0.9375rem */
+  margin-top: 2em;
+  margin-right: 3.75em;
 }
 .right-section .button-header {
-  margin: 0.3125rem; /* 5px / 16px = 0.3125rem */
-  transition: text-decoration 0.15s;
+  margin-left: 2.2em;
 }
 .right-section .button-header a {
   text-decoration: none;
   color: black;
 }
 .right-section .button-header a:hover {
-  cursor: pointer;
   text-decoration: underline;
   text-decoration-color: #ffde59;
   text-decoration-thickness: 0.25em; /* 4px / 16px = 0.25em */
@@ -48,7 +61,9 @@
   height: auto;
 }
 .about-me {
-  margin-bottom: 0;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+  font-size: 1.5rem;
   color: #f4cf39;
 }
 
@@ -63,6 +78,7 @@
   width: 2.25em; /* 36px / 16px = 2.25em */
   margin: 0.625rem; /* 10px / 16px = 0.625rem */
   transition: transform 0.2s ease-in-out;
+  color: yellow;
 }
 .touch-icon:hover {
   transform: scale(1.1);
