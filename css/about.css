@@ -97,8 +97,8 @@
 /* General */
 body {
   background-color: #fafafa;
+  color: #1d1d1f;
   font-family: Montserrat;
-  padding-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
 }
 button {
   font-family: Montserrat;
