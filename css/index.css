@@ -9,6 +9,7 @@
   right: 0;
   top: 0;
 }
+
 /* Header Left Secction */
 .left-section {
   display: flex;
@@ -47,48 +48,6 @@
   text-decoration: underline;
   text-decoration-color: #ffde59;
   text-decoration-thickness: 0.25em;
-}
-
-/* Main */
-#main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem; /* 80px / 16px = 5rem */
-}
-.about-info {
-  display: grid;
-  margin-top: 0;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
-  font-size: 1rem; /* 16px / 16px = 1rem */
-  line-height: 1.6em; /* 25.6px / 16px = 1.6em */
-}
-.img-character {
-  height: auto;
-}
-.about-me {
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
-  font-size: 1.5rem;
-  color: #f4cf39;
-}
-
-/* Get In Touch */
-.get-in-touch {
-  display: flex;
-  column-gap: 0.4375rem; /* 7px / 16px = 0.4375rem */
-  margin-bottom: 0.3125rem; /* 5px / 16px = 0.3125rem */
-  margin-left: -0.625rem; /* -10px / 16px = -0.625rem */
-}
-.touch-icon {
-  width: 2.25em; /* 36px / 16px = 2.25em */
-  margin: 0.625rem; /* 10px / 16px = 0.625rem */
-  transition: transform 0.2s ease-in-out;
-  color: yellow;
-}
-.touch-icon:hover {
-  transform: scale(1.1);
 }
 
 /* Footer */
