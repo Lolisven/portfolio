@@ -20,7 +20,7 @@
   font-size: 1.5rem;
 
   text-decoration: none;
-  color: black;
+  color: #1d1d1f;
 }
 
 /* Header Right Seaction  */
@@ -33,13 +33,20 @@
   margin-left: 2.2em;
 }
 .right-section .button-header a {
+  text-decoration-color: #ffde59;
   text-decoration: none;
-  color: black;
+  color: #1d1d1f;
 }
 .right-section .button-header a:hover {
   text-decoration: underline;
   text-decoration-color: #ffde59;
   text-decoration-thickness: 0.25em; /* 4px / 16px = 0.25em */
+}
+
+.selected {
+  text-decoration: underline;
+  text-decoration-color: #ffde59;
+  text-decoration-thickness: 0.25em;
 }
 
 /* Main */
