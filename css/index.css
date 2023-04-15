@@ -1,3 +1,8 @@
+/* Variables */
+:root {
+  --color-white: #fafafa;
+  --color-black: #1d1d1f;
+}
 /* Header */
 .header {
   display: flex;
@@ -41,7 +46,7 @@
 .right-section .button-header a:hover {
   text-decoration: underline;
   text-decoration-color: #ffde59;
-  text-decoration-thickness: 0.25em; /* 4px / 16px = 0.25em */
+  text-decoration-thickness: 0.25em; /* .25rem / 1rem = 0.25em */
 }
 
 .selected {
@@ -49,12 +54,60 @@
   text-decoration-color: #ffde59;
   text-decoration-thickness: 0.25em;
 }
+/* Main Section */
+#hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 12.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.hero-text {
+  display: inline-flex;
+  flex-direction: column;
+}
+.hero-title {
+  position: relative;
+  margin: 0;
+  font-size: 6rem;
+}
+.hero-name {
+  color: #fafafa;
+}
+.hero-name::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 88.875rem;
+  height: 9.8125rem; /* adjust as needed */
+  background-color: #ffde59; /* or any other color */
+  z-index: -1; /* to position the rectangle behind the text */
+}
+.hero-desc {
+  margin: 0;
+  font-size: 2rem;
+}
+.hero-portfolio {
+  display: inline-flex;
+  color: var(--color-white);
+}
+.hero-portfolio-text {
+  height: 21.875rem;
+  width: 18.75rem;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7rem;
+  text-align: right;
+}
 
 /* Footer */
 .footer {
   display: flex;
   position: sticky;
-  height: 3.125rem; /* 50px / 16px = 3.125rem */
+  height: 3.125rem; /* 3.125rem / 1rem = 50px */
   left: 0;
   right: 0;
   justify-content: space-between;
@@ -71,12 +124,6 @@ button {
 }
 /* Media */
 @media (max-width: 37.5em) {
-  .about-info {
-    grid-template-columns: 1fr;
-  }
-  .img-character {
-    display: none;
-  }
 }
 
 /* Animations */
