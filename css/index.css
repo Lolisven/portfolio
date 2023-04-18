@@ -2,6 +2,7 @@
 :root {
   --color-white: #fafafa;
   --color-black: #1d1d1f;
+  --color-yellow: #ffde59;
 }
 /* Header */
 .header {
@@ -55,52 +56,64 @@
   text-decoration-thickness: 0.25em;
 }
 /* Main Section */
-#hero-section {
+/* #hero-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 12.5rem;
   margin-left: 4rem;
   margin-right: 4rem;
+} */
+#hero-section {
+  display: grid;
+  grid-template-columns:800px 1fr 300px;
+  grid-template-areas:
+  ". . portfolio"
+  "text filler portfolio"
+  "description . .";
+  grid-column-gap: 0;
+  justify-content: space-between;
+  margin-top: 12.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 .hero-text {
+  grid-area: text;
   display: inline-flex;
   flex-direction: column;
 }
 .hero-title {
-  position: relative;
+  background-color: var(--color-yellow);
   margin: 0;
   font-size: 6rem;
 }
 .hero-name {
+  font-weight: 600; 
   color: #fafafa;
-}
-.hero-name::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 88.875rem;
-  height: 9.8125rem; /* adjust as needed */
-  background-color: #ffde59; /* or any other color */
-  z-index: -1; /* to position the rectangle behind the text */
+  background-color: #ffde59;
 }
 .hero-desc {
+  grid-area: description;
   margin: 0;
   font-size: 2rem;
 }
 .hero-portfolio {
   display: inline-flex;
+  grid-area: portfolio;
+  background-color: #ffde59;
   color: var(--color-white);
 }
 .hero-portfolio-text {
-  height: 21.875rem;
-  width: 18.75rem;
   margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 6rem;
   line-height: 7rem;
   text-align: right;
+}
+.empty-background{
+  grid-area: filler;
+background-color: #ffde59;
 }
 
 /* Footer */
@@ -123,7 +136,27 @@ button {
   font-family: Montserrat;
 }
 /* Media */
-@media (max-width: 37.5em) {
+@media (max-width: 450px) {
+  .empty-background{
+    display: none;
+  }
+  .hero-portfolio{
+    display: none;
+  }
+  #hero-section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-areas:
+    ". . portfolio"
+    "text filler portfolio"
+    "description . .";
+    margin: 0;
+    margin-top: 14rem;
+  }
+  .hero-title{
+    background-color: var(--color-white);
+  }
+
 }
 
 /* Animations */
