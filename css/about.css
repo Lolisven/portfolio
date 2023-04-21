@@ -29,18 +29,16 @@
   margin-top: 2em;
   margin-right: 3.75em;
 }
-.right-section .button-header {
-  margin-left: 2.2em;
-}
-.right-section .button-header a {
+.right-section a {
   text-decoration-color: #ffde59;
   text-decoration: none;
   color: #1d1d1f;
+  margin-left: 2.2em;
 }
-.right-section .button-header a:hover {
+.right-section a:hover {
   text-decoration: underline;
   text-decoration-color: #ffde59;
-  text-decoration-thickness: 0.25em; /* 4px / 16px = 0.25em */
+  text-decoration-thickness: 0.25em; /* .25rem / 1rem = 0.25em */
 }
 
 .selected {

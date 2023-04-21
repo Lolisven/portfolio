@@ -13,8 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/hidden.js"></script>
   </head>
   <body>
+    <img class="hero-background" src="imgs/background.png" alt="" />
     <!-- Header -->
     <header class="header">
       <div class="left-section">
@@ -24,36 +26,40 @@
       </div>
       <div class="middle-section"></div>
       <div class="right-section">
-        <div class="button-header">
-          <a href="about.html">About Me</a>
-        </div>
-        <div class="button-header">
-          <a href="">Resume</a>
-        </div>
+        <ul class="list">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="">Resume</a></li>
+        </ul>
       </div>
     </header>
 
     <!-- Main -->
     <main id="main-content">
       <!-- First Section -->
-      <div id="hero-section">
-        <div class="hero-text">
-          <p class="hero-title">
-            <span style="background-color: #fafafa">HI, I'M</span>
-            <span class="hero-name">GALINA</span>
-          </p>
+      <section class="transparent">
+        <div id="hero-section" class="transparent hidden">
+          <div class="hero-text">
+            <p class="hero-title">
+              <span style="background-color: #fafafa">HI, I'M </span>
+              <span class="hero-name">GALINA</span>
+            </p>
+          </div>
+          <p class="hero-desc">A web design student and an aspiring designer</p>
+          <div class="empty-background"></div>
+          <div class="hero-portfolio">
+            <p class="hero-portfolio-text">MY PORT FOLIO</p>
+          </div>
         </div>
-        <p class="hero-desc">A web design student and an aspiring designer</p>
-        <div class="empty-background"></div>
-        <div class="hero-portfolio">
-          <p class="hero-portfolio-text">MY PORT FOLIO</p>
+        <!-- Arrows -->
+        <div class="arrow-container hidden">
+          <i class="arrow-down"></i>
+          <i class="arrow-down"></i>
         </div>
-      </div>
-      <!-- Arrows -->
-      <div class="arrow-container">
-        <i class="arrow-down"></i>
-        <i class="arrow-down"></i>
-      </div>
+      </section>
+
+      <section>
+        <div class="hidden"></div>
+      </section>
     </main>
 
     <!-- Footer -->
