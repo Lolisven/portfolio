@@ -144,10 +144,15 @@
   margin-top: -1rem;
   animation: wiggle 0.5s ease-in-out infinite alternate;
 }
-/* Projects Text */
+/* Second Section */
 .second-section {
   background: linear-gradient(180deg, #ececec 0%, #fafafa 12.5%);
 }
+/* Third Section */
+.third-section {
+  background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%);
+}
+/* Project Container */
 .project-text-container {
   background: #ececec;
   display: flex;
@@ -162,7 +167,6 @@
   color: #f1f1f1;
   background: #ffde59;
 }
-/* Project Container */
 .project-container {
   max-height: 100%;
   display: flex;
@@ -217,6 +221,25 @@
 }
 .project-content {
   max-width: 75%;
+}
+/* Separation Line */
+.separation-line {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-white);
+  height: 7px;
+}
+.line {
+  height: 100%;
+  width: 75%;
+  background-color: var(--color-yellow);
+}
+/* Line colors */
+.first-line {
+  background-color: var(--color-white);
+}
+.second-line {
+  background-color: #ececec;
 }
 /* Footer */
 .footer {
@@ -303,14 +326,6 @@ body {
   .header .right-section {
     margin: 0;
   }
-  /* Horizontal Scroll Stop */
-  html,
-  body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative;
-  }
   /* First Section */
   .first-section {
     display: flex;
@@ -319,8 +334,38 @@ body {
     padding: 1rem 1rem 2rem 1rem;
     box-sizing: border-box;
   }
+  #hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ". . portfolio"
+      "text filler portfolio"
+      "description . .";
+    padding: 50% 0 0 0;
+  }
+  .hero-title {
+    background-color: transparent;
+  }
+  .hero-desc {
+    font-size: 1.25rem;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .arrow-down {
+    padding: 0.5rem;
+    margin-top: -0.5rem;
+    border-width: 0 3px 3px 0;
+  }
   .arrow-container {
     padding-bottom: 1rem;
+  }
+  .hero-background {
+    display: none;
+  }
+  .empty-background,
+  .hero-portfolio {
+    display: none;
   }
   /* My Projects */
   .projects-text {
@@ -334,6 +379,11 @@ body {
   .second-section {
     background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%);
   }
+  /* Third Section */
+  .third-section {
+    background: linear-gradient(180deg, #ececec 0%, #fafafa 12.5%);
+  }
+  /* Project Container */
   .project-container {
     flex-direction: column;
     padding-bottom: 1rem;
@@ -360,48 +410,31 @@ body {
   .view-project {
     font-size: 1rem;
   }
-  .hero-background {
-    display: none;
-  }
-  section {
-    max-height: 100svh;
-    min-height: 100%;
-    position: relative;
-  }
-  .empty-background,
-  .hero-portfolio {
-    display: none;
-  }
-  /* Hero Section */
-  #hero-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      ". . portfolio"
-      "text filler portfolio"
-      "description . .";
-    padding: 50% 0 0 0;
-  }
-  .hero-title {
-    background-color: transparent;
-  }
-  .hero-desc {
-    font-size: 1.25rem;
-  }
-  .hero-title {
-    font-size: 4rem;
-  }
+  /* Separation Line */
 
-  .arrow-down {
-    padding: 0.5rem;
-    margin-top: -0.5rem;
-    border-width: 0 3px 3px 0;
+  /* First Line */
+  .first-line {
+    background-color: #ececec;
   }
   /* Hamburger */
 
   /* Footer */
   .footer-text {
     font-size: 14px;
+  }
+  /* General */
+  section {
+    max-height: 100svh;
+    min-height: 100%;
+    position: relative;
+  }
+  /* Horizontal Scroll Stop */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
   }
 }
 @media (prefers-reduced-motion) {
