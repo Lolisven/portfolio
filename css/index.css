@@ -188,17 +188,20 @@
 /* General */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  z-index: -1;
+  overflow-x: clip;
 }
 body {
   height: 100%;
   max-width: 100%;
-  overflow-x: hidden;
   background: var(--color-white);
   color: #1d1d1f;
   font-family: Montserrat;
   margin: 0;
+  overflow-x: clip;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 button {
   font-family: Montserrat;
@@ -220,13 +223,6 @@ section {
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 /* Media */
 @media (max-width: 900px) {
   /* First Section */
