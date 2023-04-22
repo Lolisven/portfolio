@@ -270,6 +270,9 @@ body {
   .hero-portfolio {
     display: none;
   }
+  .hero-name {
+    background-color: var(--color-trans-yellow);
+  }
   /* My Projects */
   .projects-text {
     margin: 0;
