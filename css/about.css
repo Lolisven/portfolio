@@ -3,12 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fafafa;
+  background-color: transparent;
   position: sticky;
+  z-index: 100;
   left: 0;
   right: 0;
   top: 0;
+  height: 4.6875rem;
+  padding: 0 1rem 0 1rem;
 }
+
 /* Header Left Secction */
 .left-section {
   display: flex;
@@ -40,7 +44,10 @@
   text-decoration-color: #ffde59;
   text-decoration-thickness: 0.25em; /* .25rem / 1rem = 0.25em */
 }
-
+.list {
+  list-style: none;
+  display: flex;
+}
 .selected {
   text-decoration: underline;
   text-decoration-color: #ffde59;
@@ -92,15 +99,47 @@
 /* Footer */
 .footer {
   display: flex;
-  position: sticky;
-  height: 3.125rem; /* 50px / 16px = 3.125rem */
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
   left: 0;
   right: 0;
-  justify-content: space-between;
+  bottom: 0;
+  background-color: #f5f5f7;
+}
+.footer .middle-section {
+  display: flex;
+  flex-direction: column;
+}
+.credit-container,
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+.footer-text,
+.footer-click {
+  text-decoration: none;
+  color: var(--color-black);
+  margin: 0;
+  font-weight: 300;
+  font-size: 1rem;
+  transition: all 0.15s;
+}
+.footer-click:hover {
+  /* text-decoration: underline;
+  text-decoration-color: var(--color-black);
+  text-decoration-thickness: 0.1rem; */
+  border-bottom: solid var(--color-black) 0.1rem;
 }
 
 /* General */
 body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+
   background-color: #fafafa;
   color: #1d1d1f;
   font-family: Montserrat;
@@ -108,25 +147,33 @@ body {
 button {
   font-family: Montserrat;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 /* Media */
-@media (max-width: 37.5em) {
+@media (max-width: 900px) {
+  /* Header */
+  .header .left-section,
+  .header,
+  .header .right-section {
+    margin: 0;
+  }
+  /* Main Section */
   .about-info {
     grid-template-columns: 1fr;
   }
   .img-character {
     display: none;
   }
-}
-
-/* Animations */
-@keyframes line {
-  0% {
-    transform: translate(-50%, -50%) scaleX(0);
-  }
-  50% {
-    transform: translate(-50%, -50%) scaleX(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scaleX(1);
+  /* Footer */
+  .footer-text {
+    font-size: 0.875rem;
   }
 }

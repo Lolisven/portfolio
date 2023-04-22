@@ -21,7 +21,16 @@
   height: 4.6875rem;
   padding: 0 1rem 0 1rem;
 }
-
+/* Blurred Background Effect */
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 /* Header Left Secction */
 .left-section {
   display: flex;
@@ -420,7 +429,7 @@ body {
 
   /* Footer */
   .footer-text {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   /* General */
   section {
