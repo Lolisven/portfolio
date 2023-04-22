@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script defer src="js/hidden.js"></script>
@@ -38,21 +38,23 @@
     <main id="main-content">
       <!-- First Section -->
       <section class="first-section transparent">
-        <div id="hero-section" class="transparent hidden">
-          <div class="hero-text">
+        <div id="hero-section" class="transparent">
+          <div class="hero-text hidden-left">
             <p class="hero-title">
               <span style="background-color: #fafafa">HI, I'M </span>
               <span class="hero-name">GALINA</span>
             </p>
           </div>
-          <p class="hero-desc">A web design student and an aspiring designer</p>
-          <div class="empty-background"></div>
-          <div class="hero-portfolio">
+          <p class="hero-desc hidden-left">
+            A web design student and an aspiring designer
+          </p>
+          <div class="empty-background hidden-right"></div>
+          <div class="hero-portfolio hidden-right">
             <p class="hero-portfolio-text">MY PORT FOLIO</p>
           </div>
         </div>
         <!-- Arrows -->
-        <div class="arrow-container hidden">
+        <div class="arrow-container hidden-right">
           <i class="arrow-down"></i>
           <i class="arrow-down"></i>
         </div>
@@ -63,7 +65,7 @@
       </div>
       <!-- Second Section -->
       <section class="second-section">
-        <div class="item-section hidden">
+        <div class="item-section hidden-right">
           <div class="project-container">
             <div class="project-img">
               <img
@@ -87,8 +89,28 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="left-section"></div>
-      <div class="right-section"></div>
+      <div class="middle-section">
+        <div class="contact-container">
+          <a class="footer-click" href="mailto:galina.gganeva@gmail.com"
+            >galina.gganeva@gmail.com</a
+          >
+          <a class="footer-click" href="tel:+359 898 710 566"
+            >+359 898 710 566</a
+          >
+        </div>
+        <div class="credit-container">
+          <p class="footer-text">Designed by me</p>
+          <p class="footer-text">
+            Coded by
+            <a
+              class="footer-click"
+              href="https://github.com/Maglata"
+              target="_blank"
+              >Stefan Gavrailov</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

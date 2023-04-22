@@ -9,5 +9,8 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+const hiddenElementsleft = document.querySelectorAll('.hidden-left');
+hiddenElementsleft.forEach((el) => observer.observe(el));
+
+const hiddenElementsright = document.querySelectorAll('.hidden-right');
+hiddenElementsright.forEach((el) => observer.observe(el));
