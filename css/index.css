@@ -187,9 +187,11 @@
 }
 
 /* General */
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+  overflow-x: hidden;
+  z-index: -1;
+}
 body {
   height: 100%;
   max-width: 100%;
@@ -324,15 +326,6 @@ body {
     min-height: 100%;
     position: relative;
   }
-
-  /* Horizontal Scroll Stop */
-  /* html,
-  body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative;
-  } */
 }
 @media (prefers-reduced-motion) {
   .hidden {
@@ -341,18 +334,21 @@ body {
 }
 /* Transitions */
 .hidden-left {
+  visibility: hidden;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1.5s;
 }
 .hidden-right {
+  visibility: hidden;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(100%);
   transition: all 1.5s;
 }
 .show {
+  visibility: visible;
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
