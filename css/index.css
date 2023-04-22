@@ -261,6 +261,7 @@ html {
 }
 body {
   height: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   background: var(--color-white);
   color: #1d1d1f;
@@ -296,6 +297,20 @@ body {
 
 /* Media */
 @media (max-width: 900px) {
+  /* Header */
+  .header .left-section,
+  .header,
+  .header .right-section {
+    margin: 0;
+  }
+  /* Horizontal Scroll Stop */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
   /* First Section */
   .first-section {
     display: flex;
@@ -357,6 +372,7 @@ body {
   .hero-portfolio {
     display: none;
   }
+  /* Hero Section */
   #hero-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -364,7 +380,7 @@ body {
       ". . portfolio"
       "text filler portfolio"
       "description . .";
-    padding: 50% 0 0 1rem;
+    padding: 50% 0 0 0;
   }
   .hero-title {
     background-color: transparent;
@@ -375,11 +391,7 @@ body {
   .hero-title {
     font-size: 4rem;
   }
-  .header .left-section,
-  .header,
-  .header .right-section {
-    margin: 0;
-  }
+
   .arrow-down {
     padding: 0.5rem;
     margin-top: -0.5rem;
