@@ -187,9 +187,9 @@
 }
 
 /* General */
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 body {
   height: 100%;
   max-width: 100%;
@@ -228,12 +228,6 @@ body {
 
 /* Media */
 @media (max-width: 900px) {
-  /* Header */
-  .header .left-section,
-  .header,
-  .header .right-section {
-    margin: 0;
-  }
   /* First Section */
   .first-section {
     display: flex;
