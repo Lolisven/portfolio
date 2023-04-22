@@ -1,0 +1,74 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: sticky;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4.6875rem;
+  padding: 0 1rem 0 1rem;
+}
+/* Blurred Background Effect */
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+/* Header Left Secction */
+.left-section {
+  display: flex;
+  margin-top: 2em;
+  margin-left: 3.75em;
+}
+.gg-link {
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  color: #1d1d1f;
+}
+
+/* Header Right Seaction  */
+.header .right-section {
+  display: flex;
+  margin-top: 2em;
+  margin-right: 3.75em;
+}
+.right-section a {
+  text-decoration-color: #ffde59;
+  text-decoration: none;
+  color: #1d1d1f;
+  margin-left: 2.2em;
+}
+.right-section a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffde59;
+  text-decoration-thickness: 0.25em; /* .25rem / 1rem = 0.25em */
+}
+.list {
+  list-style: none;
+  display: flex;
+}
+.selected {
+  text-decoration: underline;
+  text-decoration-color: #ffde59;
+  text-decoration-thickness: 0.25em;
+}
+/* Header Hamburger */
+
+@media (max-width: 900px) {
+  /* Header */
+  .header .left-section,
+  .header,
+  .header .right-section {
+    margin: 0;
+  }
+}
