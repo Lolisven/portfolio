@@ -43,7 +43,6 @@
 .hero-name {
   font-weight: 600;
   color: #fafafa;
-  background-color: transparent;
 }
 .hero-desc {
   grid-area: description;
