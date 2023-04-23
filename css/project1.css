@@ -1,0 +1,95 @@
+/* First Section */
+#first-section {
+  height: calc(100svh - 4.6875rem);
+  box-sizing: border-box;
+}
+/* Background */
+.project-background {
+  width: 100%;
+}
+.project-background-img {
+  width: 100%;
+}
+/* Second Section */
+#second-section {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+  padding: 0 1rem 0 1rem;
+  justify-content: center;
+}
+/* Project Text */
+.project-text {
+  width: 45%;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.section-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+/* Project Info */
+.project-info {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}
+.project-info p {
+  margin: 0;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0 1rem 0;
+}
+.info-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.info-content {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+/* General */
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+body {
+  height: 100%;
+  max-width: 100%;
+  background-color: #fbfafb;
+  color: #1d1d1f;
+  font-family: Montserrat;
+  margin: 0;
+  overflow-x: clip;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 900px) {
+  /* Background */
+  .project-background {
+  }
+  /* Second Section */
+  #second-section {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .project-text {
+    width: 100%;
+  }
+  /* Temporary Section Change so that it doesn't look ugly */
+  #first-section {
+    height: fit-content;
+  }
+  #second-section {
+    padding-top: 1rem;
+  }
+}
