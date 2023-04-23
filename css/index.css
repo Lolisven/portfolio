@@ -93,7 +93,18 @@
 }
 /* Third Section */
 .third-section {
-  background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%);
+  /* background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%); */
+  background-color: transparent;
+}
+.third-section .project-container {
+  flex-direction: row-reverse;
+}
+.third-section .project-text {
+  width: 35%;
+}
+.third-section .project-content {
+  max-width: 85%;
+  width: fit-content;
 }
 /* Project Container */
 .project-text-container {
@@ -113,6 +124,7 @@
 .project-container {
   max-height: 100%;
   display: flex;
+  justify-content: center;
 }
 .project-picture {
   width: 100%;
@@ -120,7 +132,7 @@
   max-height: 62.5rem;
 }
 .project-img {
-  width: 50%;
+  width: 45%;
 }
 .project-text {
   display: flex;
@@ -149,14 +161,14 @@
   margin-left: 1px;
   padding: 0.5rem 0 7rem 0;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.875rem;
 }
 .view-project {
   position: relative;
   margin: 0;
   padding: 0 0 0 0;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.625rem;
 
   margin-left: 0.25rem;
   text-decoration: none;
@@ -188,18 +200,12 @@
   justify-content: center;
   background-color: var(--color-white);
   height: 7px;
+  padding: 1rem 0 2rem 0;
 }
 .line {
   height: 100%;
   width: 75%;
   background-color: var(--color-yellow);
-}
-/* Line colors */
-.first-line {
-  background-color: var(--color-white);
-}
-.second-line {
-  background-color: #ececec;
 }
 
 /* General */
@@ -225,7 +231,6 @@ button {
 }
 section {
   position: relative;
-  padding-bottom: 1rem;
 }
 .transparent {
   background: transparent;
@@ -296,11 +301,13 @@ body::-webkit-scrollbar {
   }
   /* Second Section */
   .second-section {
-    background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%);
+    /* background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%); */
+    background: transparent;
   }
   /* Third Section */
   .third-section {
-    background: linear-gradient(180deg, #ececec 0%, #fafafa 12.5%);
+    /* background: linear-gradient(180deg, #ececec 0%, #fafafa 12.5%); */
+    background: transparent;
   }
   /* Project Container */
   .project-container {
@@ -333,7 +340,8 @@ body::-webkit-scrollbar {
 
   /* First Line */
   .first-line {
-    background-color: #ececec;
+    /* background-color: #ececec; */
+    background: transparent;
   }
   /* General */
   section {
