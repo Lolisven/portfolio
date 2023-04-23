@@ -38,11 +38,12 @@
 }
 .preview-content {
   top: 4%;
-  bottom: 12.05%;
+  bottom: 10%;
   position: absolute;
   z-index: 1;
   width: 80%;
   max-width: 980px;
+
   overflow-y: auto;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -157,5 +158,15 @@ body::-webkit-scrollbar {
   }
   #second-section {
     padding-top: 1rem;
+  }
+}
+@media (max-width: 660px) {
+  .preview-content {
+    top: 7%;
+  }
+}
+@media (max-width: 380px) {
+  .preview-content {
+    top: 8%;
   }
 }
