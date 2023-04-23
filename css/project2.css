@@ -114,11 +114,13 @@ body::-webkit-scrollbar {
   #second-section {
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 5.625rem;
   }
   /* Before and After Section */
   #third-section {
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 5.625rem;
   }
   .project-text,
   .image-section {
