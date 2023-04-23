@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem; /* 80px / 16px = 5rem */
+  padding: 5rem 2rem 0 2rem;
 }
 .about-info {
   display: grid;
@@ -17,10 +17,15 @@
   height: auto;
 }
 .about-me {
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
   font-size: 1.5rem;
   color: #f4cf39;
+  margin: 0;
+  padding: 1.75rem 0 0 0;
+}
+.about-name {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* Get In Touch */
@@ -51,9 +56,6 @@ body {
   color: #1d1d1f;
   font-family: Montserrat;
 }
-button {
-  font-family: Montserrat;
-}
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
@@ -72,5 +74,8 @@ body {
   }
   .img-character {
     display: none;
+  }
+  #main-content {
+    padding: 2rem 2rem 0 2rem;
   }
 }

@@ -4,8 +4,7 @@
   height: fit-content;
   justify-content: center;
   align-items: center;
-  left: 0;
-  right: 0;
+  width: 100%;
   bottom: 0;
   background-color: #f5f5f7;
 }
