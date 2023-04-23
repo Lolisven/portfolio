@@ -1,0 +1,151 @@
+/* Opening Section */
+#first-section {
+  height: calc(100svh - 4.6875rem);
+  box-sizing: border-box;
+}
+/* Background */
+.project-background {
+  width: 100%;
+}
+.project-background-img {
+  width: 100%;
+}
+/* Text Section */
+#second-section {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 9rem;
+  padding: 0 1rem 7.5rem 1rem;
+  justify-content: center;
+}
+/* Before and After Section */
+#third-section {
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+  padding: 0 1rem 7.5rem 1rem;
+}
+.image-section {
+  width: 40%;
+}
+/* Project Text */
+.project-text {
+  width: 45%;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.section-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.section-text p {
+  margin: 0;
+  padding: 1rem 0 3rem 0;
+}
+/* Project Info */
+.project-info {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+}
+.project-info p {
+  margin: 0;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0 3rem 0;
+}
+.info-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.info-content {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+/* General */
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+body {
+  height: 100%;
+  max-width: 100%;
+  background-color: #fbfafb;
+  color: #1d1d1f;
+  font-family: Montserrat;
+  margin: 0;
+  overflow-x: clip;
+  z-index: -100;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.centered {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.full {
+  width: 100%;
+}
+.ideation {
+  max-width: 560px;
+}
+.before-after {
+  max-height: 500px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  /* Background */
+  .project-background {
+  }
+  /* Text Section */
+  #second-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* Before and After Section */
+  #third-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project-text,
+  .image-section {
+    width: 100%;
+  }
+  /* Font Adjusting */
+  .info-title,
+  .info-content {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.625rem;
+  }
+  .section-text {
+    font-size: 1.25rem;
+  }
+  /* Padding/Margin Adjusting */
+  .info-container {
+    gap: 0.625rem;
+    padding: 0 0 2rem 0;
+  }
+
+  /* Temporary Section Change so that it doesn't look ugly */
+  #first-section {
+    height: fit-content;
+  }
+  #second-section {
+    padding-top: 1rem;
+  }
+}
