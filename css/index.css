@@ -299,15 +299,17 @@ body::-webkit-scrollbar {
   .project-text-container {
     background: #fafafa;
   }
-  /* Second Section */
-  .second-section {
-    /* background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%); */
+  /* Second and Third Section */
+  .second-section,
+  .third-section {
     background: transparent;
   }
-  /* Third Section */
-  .third-section {
-    /* background: linear-gradient(180deg, #ececec 0%, #fafafa 12.5%); */
-    background: transparent;
+  .third-section .project-container {
+    flex-direction: column;
+  }
+  .third-section .project-container .project-text {
+    padding: 0 0 0 1rem;
+    width: 100%;
   }
   /* Project Container */
   .project-container {
