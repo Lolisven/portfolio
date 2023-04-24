@@ -87,14 +87,49 @@
   margin-top: -1rem;
   animation: wiggle 0.5s ease-in-out infinite alternate;
 }
+/* Project Section */
+.project-section {
+  display: flex;
+}
+.item-section {
+  width: 94.6%;
+}
+/* Project Number */
+.project-number-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+}
+.project-number {
+  color: var(--color-yellow);
+  font-weight: 500;
+  font-size: 2rem;
+  width: fit-content;
+}
+.project-line {
+  max-width: 7px;
+  width: 100%;
+  height: 35%;
+  background-color: var(--color-yellow);
+}
+.project-square {
+  max-width: 7px;
+  width: 100%;
+  max-height: 7px;
+  height: 100%;
+  background-color: var(--color-yellow);
+}
 /* Second Section */
 .second-section {
   background: linear-gradient(180deg, #ececec 0%, #fafafa 12.5%);
 }
 /* Third Section */
 .third-section {
-  /* background: linear-gradient(180deg, #fafafa 0%, #ececec 12.5%); */
   background-color: transparent;
+  flex-direction: row-reverse;
 }
 .third-section .project-container {
   flex-direction: row-reverse;
@@ -200,11 +235,18 @@
   justify-content: center;
   background-color: var(--color-white);
   height: 7px;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
+  gap: 1rem;
 }
 .line {
   height: 100%;
-  width: 75%;
+  width: 85%;
+  background-color: var(--color-yellow);
+}
+.square {
+  height: 100%;
+  width: 100%;
+  max-width: 7px;
   background-color: var(--color-yellow);
 }
 
@@ -254,6 +296,35 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     padding: 1rem 1rem 2rem 1rem;
     box-sizing: border-box;
+  }
+  /* Number Line Adjustment */
+  .project-number-container {
+    width: fit-content;
+  }
+  .second-section {
+    padding: 0 0.5rem 0 0;
+  }
+  .third-section {
+    padding: 0 0 0 0.5rem;
+  }
+  .fourth-section {
+    padding: 0 0.5rem 0 0;
+  }
+  /* Square removal */
+  .square,
+  .project-square {
+    display: none;
+  }
+  /* Line adjustment */
+  .project-line {
+    max-width: 5px;
+    height: 35%;
+  }
+  .project-number {
+    font-size: 1.75rem;
+  }
+  .separation-line {
+    display: none;
   }
   #hero-section {
     display: grid;
@@ -337,13 +408,6 @@ body::-webkit-scrollbar {
   }
   .view-project {
     font-size: 1rem;
-  }
-  /* Separation Line */
-
-  /* First Line */
-  .first-line {
-    /* background-color: #ececec; */
-    background: transparent;
   }
   /* General */
   section {
