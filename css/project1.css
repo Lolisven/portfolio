@@ -42,6 +42,7 @@
   position: absolute;
   top: 50%;
   left: 80%;
+  animation: wiggle 0.5s ease-in-out infinite alternate;
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -170,6 +171,16 @@ body::-webkit-scrollbar {
     padding-top: 1rem;
   }
 }
+@media (max-width: 1200px) {
+  .scroll-container {
+    left: 97.5%;
+  }
+}
+@media (max-width: 1800px) {
+  .scroll-container {
+    left: 97.5%;
+  }
+}
 @media (max-width: 660px) {
   .preview-content {
     top: 7%;
@@ -178,5 +189,13 @@ body::-webkit-scrollbar {
 @media (max-width: 380px) {
   .preview-content {
     top: 8%;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
