@@ -1,0 +1,31 @@
+.other-projects-section {
+  width: 100%;
+}
+.other-projects-text {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+.other-projects-imgs-container {
+  justify-content: center;
+  display: flex;
+  gap: 3rem;
+}
+.other-projects-imgs-container a {
+  width: 20%;
+  transition: transform 0.15s;
+}
+.other-projects-imgs-container a:hover {
+  transform: scale(0.9);
+}
+.other-project-picture {
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .other-projects-imgs-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .other-projects-imgs-container a {
+    width: 100%;
+  }
+}
