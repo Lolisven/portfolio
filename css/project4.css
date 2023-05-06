@@ -160,6 +160,9 @@ body::-webkit-scrollbar {
     gap: 1rem;
     padding-bottom: 5.625rem;
   }
+  .section-text p {
+    padding-bottom: 2rem;
+  }
   /* Before and After Section */
   #third-section {
     flex-direction: column;
