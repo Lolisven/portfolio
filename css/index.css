@@ -182,6 +182,10 @@
 }
 .project-img {
   width: 45%;
+  transition: transform 0.15s;
+}
+.project-img:hover {
+  transform: scale(0.9);
 }
 .project-text {
   display: flex;
