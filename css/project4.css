@@ -13,26 +13,6 @@
   height: 100%;
 }
 
-/* Navbar */
-#navbar {
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  float: left;
-  width: fit-content;
-  top: 4.6875rem;
-  padding: 2rem 0 0 2rem;
-}
-#navbar a {
-  font-weight: 400;
-  font-size: 1.25rem;
-
-  padding: 0.5rem 0 0.5rem 0;
-  position: relative;
-  text-decoration-color: #ffde59;
-  text-decoration: none;
-  color: #1d1d1f;
-}
 /* Text Section */
 #second-section {
   height: 100%;
@@ -195,10 +175,6 @@ body::-webkit-scrollbar {
   .info-container {
     gap: 0.625rem;
     padding: 0 0 2rem 0;
-  }
-  /* Navbar Adjustment */
-  #navbar {
-    display: none;
   }
 
   /* Temporary Section Change so that it doesn't look ugly */
