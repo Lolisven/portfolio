@@ -39,7 +39,7 @@
 #third-section {
   display: flex;
   justify-content: center;
-  gap: 9rem;
+  gap: 7rem;
   padding: 0 1rem 7.5rem 1rem;
 }
 .image-container {
