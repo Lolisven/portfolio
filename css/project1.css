@@ -21,6 +21,9 @@
   padding: 1rem 0 1rem 0;
   max-width: 100%;
 }
+.bigger-img {
+  width: 175%;
+}
 /* Second Section */
 #second-section {
   height: 100%;
@@ -151,6 +154,9 @@ body::-webkit-scrollbar {
   }
   /* Img adjusting */
   .section-images {
+    width: 100%;
+  }
+  .bigger-img {
     width: 100%;
   }
   /* Second Section */

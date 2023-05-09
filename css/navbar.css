@@ -6,7 +6,7 @@
   float: left;
   width: fit-content;
   top: 4.6875rem;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 0 0 4rem;
   z-index: 1000;
 }
 #navbar a {

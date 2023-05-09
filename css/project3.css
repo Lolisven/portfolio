@@ -12,6 +12,20 @@
   width: 100%;
   height: 100%;
 }
+/* Project Images */
+.section-images {
+  /* So that the pictures overflow into the right side */
+  width: 150%;
+  display: flex;
+  flex-direction: column;
+}
+.app-img {
+  padding: 1rem 0 1rem 0;
+  max-width: 100%;
+}
+.bigger-img {
+  width: 175%;
+}
 /* Text Section */
 #second-section {
   height: 100%;
@@ -121,6 +135,13 @@ body::-webkit-scrollbar {
 @media (max-width: 900px) {
   /* Background */
   .project-background {
+  }
+  /* Img adjusting */
+  .section-images {
+    width: 100%;
+  }
+  .bigger-img {
+    width: 100%;
   }
   /* Text Section */
   #second-section {
