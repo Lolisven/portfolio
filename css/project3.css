@@ -56,15 +56,16 @@
 }
 .section-title {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .section-text {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .section-text p {
   margin: 0;
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 2rem 0;
+  line-height: 160%;
 }
 /* Project Info */
 .project-info {

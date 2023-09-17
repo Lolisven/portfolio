@@ -16,16 +16,10 @@
 .img-character {
   height: auto;
 }
-.about-me {
-  font-size: 1.5rem;
-  color: #f4cf39;
-  margin: 0;
-  padding: 1.75rem 0 0 0;
-}
 .about-name {
   font-weight: 500;
   font-size: 3rem;
-  color: #ffde59;
+  color: #2E5CB7;
   padding: 3rem 0 3rem 0;
   margin: 0;
 }
@@ -34,6 +28,7 @@
   max-width: 36rem;
   font-size: 1.125rem;
   font-weight: 400;
+  line-height: 160%;
 }
 /* Icon Sizing */
 .text-icon {

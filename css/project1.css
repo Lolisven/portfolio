@@ -86,11 +86,12 @@
 }
 .section-title {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .section-text {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 160%;
 }
 .section-text p {
   margin: 0;

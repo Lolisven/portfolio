@@ -19,6 +19,7 @@
 }
 .other-project-picture {
   width: 100%;
+  border-radius: 1rem;
 }
 @media (max-width: 900px) {
   .other-projects-imgs-container {
