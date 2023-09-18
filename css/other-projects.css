@@ -25,8 +25,9 @@
   .other-projects-imgs-container {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
   .other-projects-imgs-container a {
-    width: 100%;
+    width: 90%;
   }
 }
