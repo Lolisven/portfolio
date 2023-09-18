@@ -88,6 +88,14 @@
   border: 4px solid #1d1d1f;
   background: lightgray 50% / cover no-repeat;
 }
+.border {
+  border-radius: 0.625rem;
+  border: 4px solid #1d1d1f;
+  background: lightgray -1.002px -23.105px / 100.186% 108.325% no-repeat;
+}
+.padding {
+  padding: 1rem 0 3rem 0;
+}
 /* Project Text */
 .project-text {
   width: 45%;
